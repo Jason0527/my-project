@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeason.moudel.first.dao.CustDao">
+	<sql id="custColumns">
+		id as id,
+		cust_no as custNo,
+		cust_name as custName,
+		password as password 
+	</sql>
+	
+	<select id="findList" parameterType="com.jeason.moudel.first.entity.Cust"  resultType="com.jeason.moudel.first.entity.Cust">
+		select 
+		<include refid="custColumns"></include>
+		from cust 
+		<where>
+			<if test="custNo != null and custNo != ''">
+				AND cust_no = #{custNo} 
+			</if>
+			<if test="custName != null and custName != ''">
+				AND cust_name = #{custName} 
+			</if>
+			<if test="id != null and id != ''">
+				AND id = #{id} 
+			</if>
+			<if test="password != null and password != ''">
+				AND password = #{password} 
+			</if>
+		</where>
+	</select>
+</mapper>
