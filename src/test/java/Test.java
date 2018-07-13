@@ -17,7 +17,7 @@ public class Test {
 		Jedis jd = new Jedis("127.0.0.1",6379);
 		String pong = jd.ping();
 		System.out.println(pong);
-		jd.set("name", "宁巾森");
+		jd.set("name", "裘千仞");
 		System.out.println(jd.get("name"));
 		jd.set("age", "24");
 		System.out.println(jd.get("age"));
