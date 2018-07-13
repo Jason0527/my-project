@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by CFS on 2017/3/27.
+ * Created by jason
  */
 public class HttpUtils {
     public static String doHttpRequest(String commonUrl, String requestMethod, int timeout, String msg, String charset){
