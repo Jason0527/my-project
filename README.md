@@ -1,5 +1,5 @@
 # my-project
-自己弄得一套spring mvc 框架纯净版，以后想做点东西直接拿来用
+刚开是学习那会弄了一套spring mvc 框架纯净版，后台做东西的时候经常会以它为基础，所以就扔到了GitHub上
 
 没有复杂的功能，是一套spring mvc框架基础
 
