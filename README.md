@@ -1,6 +1,2 @@
-# my-project
-刚开是学习那会弄了一套spring mvc 框架纯净版，后台做东西的时候经常会以它为基础，所以就扔到了GitHub上
-
-没有复杂的功能，是一套spring mvc框架基础
-
-只是简单的跑起来，能做增删改查，几个加解密和http传输的小工具，闲来无事弄了个redis简化版上去而已
+# springMVC 简单纯净版
+基本的springMVC框架，只有几个http传输和加解密工具类以及redis
